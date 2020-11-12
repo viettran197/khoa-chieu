@@ -3,46 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .text{
-            width: 200px;
-            height: 200px;
-            background-color: red;
-        }
-        .text p{
-            color: green !important;
-            background-color: black;
-            width: 50%;
-            height: 100px;
+    <title>Bài 1</title>
+    <style>       
+        .khung{
+            width: 300px;
+            background-color: white;
             margin: 0 auto;
-            background-image: url(picture\ 1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* border: 5px solid black; */
-            /* // top, left, right, // */
-            border-top: 5px solid black;
-            border-bottom: 5px solid black;
-            /* border-radius: 5px; */
-            border-radius: 50%;
-
-
-            /* border-width: ;
-            border-style: ;
-            border color: ; */
         }
-        #tin {
-            background-color: green;
-            width: 100px;
-            height: 100px;
-            padding: 10px 30px;
+        .login{
+            width: 100%;
+            text-align: center;
+            font-family: Arial;
+        }
+        .nhap{
+            width: 100%;
+        }
+        .sign{
+            width: 100%;
+            line-height: 50%;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .sign a{
+            color:cornflowerblue;
+            text-decoration: none;
+        }
+        .input{
+            width:100%;
+        }
+        .button{
+            width:100%;
+            text-align: center;  
+            color: white;    
+            background-color:dodgerblue;   
+            border-radius: 5px;
+            border-style: hidden;
+        }
+        #facebook{
+            background-color:darkblue;
+        }
+        .button:hover{
+            background-color:blue;
         }
     </style>
 </head>
 <body>
-    <div class="text">
-        <p style="color: red; text-align: center;" ;"> thẻ text</p>
-    </div>
-    <p style="color: red" id="tin"> thẻ text</p>
+    <form action="">
+        <div class="khung">
+            <h1 class="login">Login</h1>
+            <div class="nhap">          
+                <p>Nhập email:</p>
+                <input type="text" width="700px" placeholder="Vui lòng nhập email" class="input" >
+                <p>Nhập mật khẩu:</p>
+                <input type="password" placeholder="Vui lòng nhập mật khẩu" class="input">
+            </div>
+            <div class="sign">
+                <a href="">Bạn quên mật khẩu</a>
+                <p>Create an account? <a href="">Sign up</a></p>
+            </div>
+                <button type="submit" class="button">
+                <p>Login</p> 
+                </button>
+            <div class="login">
+                <h4>Or Login</h4>
+            </div>
+            <button type="submit"class="button" id="facebook" >
+                <p> Login With Facebook </p> 
+            </button>            
+        </div>
+    </form>
 </body>
 </html>
